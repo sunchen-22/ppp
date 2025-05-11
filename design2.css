@@ -1,0 +1,44 @@
+@layer utilities {
+    .content-auto {
+        content-visibility: auto;
+    }
+    .filter-none {
+        filter: none;
+    }
+    .filter-grayscale {
+        filter: grayscale(100%);
+    }
+    .filter-sepia {
+        filter: sepia(100%);
+    }
+    .filter-invert {
+        filter: invert(100%);
+    }
+    .filter-saturate {
+        filter: saturate(200%);
+    }
+    .filter-hue-rotate {
+        filter: hue-rotate(90deg);
+    }
+    .filter-contrast {
+        filter: contrast(150%);
+    }
+    .backdrop-blur {
+        backdrop-filter: blur(8px);
+    }
+    .transition-transform {
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+    }
+    .scale-up {
+        transform: scale(1.05);
+    }
+    .shadow-soft {
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.03);
+    }
+    .opacity-0 {
+        opacity: 0;
+    }
+}
+    
