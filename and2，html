@@ -6,7 +6,7 @@
     <title>图像滤镜应用</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="design.css" rel="stylesheet">
 </head>
 <body class="bg-gradient-to-br from-slate-50 to-slate-100 min-h-screen font-inter text-dark">
     <!-- 顶部导航 -->
@@ -228,7 +228,7 @@
                         </li>
                         <li class="flex items-start">
                             <i class="fa-solid fa-map-marker text-primary mt-1 mr-3"></i>
-                            <span class="text-slate-400">北京市朝阳区科技园A座</span>
+                            <span class="text-slate-400">22.33</span>
                         </li>
                     </ul>
                 </div>
@@ -240,7 +240,7 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="rotate2.js"></rotate2.js>
 </body>
 </html>
     
