@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3D Cube Controller</title>
+    <link rel="stylesheet" href="number9.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cube" id="cube">
+            <div class="face front">1</div>
+            <div class="face back">6</div>
+            <div class="face right">4</div>
+            <div class="face left">3</div>
+            <div class="face top">2</div>
+            <div class="face bottom">5</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="slider-container">
+            X-axis: <input type="range" id="xAxis" min="0" max="360" value="0">
+        </div>
+        <div class="slider-container">
+            Y-axis: <input type="range" id="yAxis" min="0" max="360" value="0">
+        </div>
+        <div class="slider-container">
+            Z-axis: <input type="range" id="zAxis" min="0" max="360" value="0">
+        </div>
+    </div>
+
+    <script src="number9.js"></script>
+</body>
+</html>
