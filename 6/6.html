@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Retouching</title>
+    <link rel="stylesheet" href="6.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1>Image Retouching Tool</h1>
+            <p>Upload an image and mark areas to retouch</p>
+        </header>
+
+        <div class="tool-panel">
+            <div class="file-upload">
+                <label for="image-upload" class="upload-btn">Choose Image</label>
+                <input type="file" id="image-upload" accept="image/*">
+            </div>
+            
+            <div class="brush-controls">
+                <div class="brush-size">
+                    <label for="brush-size">Brush Size: <span id="brush-size-value">15</span></label>
+                    <input type="range" id="brush-size" min="1" max="100" value="15">
+                </div>
+                
+                <div class="brush-opacity">
+                    <label for="brush-opacity">Opacity: <span id="brush-opacity-value">70</span>%</label>
+                    <input type="range" id="brush-opacity" min="10" max="100" value="70">
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="retouch-mode" class="btn primary">Enable Retouch</button>
+                <button id="apply-retouch" class="btn success" disabled>Apply Retouch</button>
+                <button id="reset-all" class="btn danger">Reset</button>
+                <button id="download-btn" class="btn" disabled>Download</button>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="source-canvas"></canvas>
+            <canvas id="retouch-canvas"></canvas>
+            <div class="canvas-overlay" id="canvas-overlay">
+                <p>Upload an image to begin retouching</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="6.js"></script>
+</body>
+</html>
