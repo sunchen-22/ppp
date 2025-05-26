@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Filter Application</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Color Filter App</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <label for="imageUpload" class="upload-btn">Choose Image</label>
+        </div>
+        
+        <div class="image-container">
+            <div class="image-box">
+                <h3>Original Image</h3>
+                <img id="originalImage" src="" alt="Original Image">
+            </div>
+            <div class="image-box">
+                <h3>Filtered Image</h3>
+                <img id="filteredImage" src="" alt="Filtered Image">
+            </div>
+        </div>
+        
+        <div class="filter-options">
+            <h3>Select Filter:</h3>
+            <div class="filter-buttons">
+                <button id="sepiaFilter" class="filter-btn">Sepia</button>
+                <button id="grayscaleFilter" class="filter-btn">Grayscale</button>
+                <button id="invertFilter" class="filter-btn">Invert</button>
+                <button id="resetFilter" class="filter-btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="2.js"></script>
+</body>
+</html>
