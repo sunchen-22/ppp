@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsharp Masking Tool</title>
+    <link rel="stylesheet" href="7.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unsharp Masking</h1>
+        
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="applyBtn">Apply Unsharp Mask</button>
+        </div>
+
+        <div class="controls">
+            <label for="amount">Amount (%):</label>
+            <input type="range" id="amount" min="0" max="200" value="100">
+            <span id="amountValue">100%</span>
+
+            <label for="radius">Radius (px):</label>
+            <input type="range" id="radius" min="0" max="10" value="2">
+            <span id="radiusValue">2</span>
+
+            <label for="threshold">Threshold:</label>
+            <input type="range" id="threshold" min="0" max="255" value="0">
+            <span id="thresholdValue">0</span>
+        </div>
+
+        <div class="image-container">
+            <div class="image-box">
+                <h3>Original</h3>
+                <canvas id="originalCanvas"></canvas>
+            </div>
+            <div class="image-box">
+                <h3>Processed</h3>
+                <canvas id="processedCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="7.js"></script>
+</body>
+</html>

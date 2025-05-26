@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Transformation with Bilinear/Trilinear Filtering</title>
+    <link rel="stylesheet" href="8.css">
+</head>
+<body>
+    <h1>Image Transformation with Bilinear/Trilinear Filtering</h1>
+    
+    <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Upload an image using the button below</li>
+            <li>Click on 3 points in the original image (red markers will appear)</li>
+            <li>Click on 3 corresponding points in the result area (blue markers will appear)</li>
+            <li>Click "Transform Image" to apply the transformation</li>
+        </ol>
+        <p>The system will automatically use bilinear filtering when enlarging and trilinear when reducing.</p>
+    </div>
+
+    <div class="controls">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="transformBtn" disabled>Transform Image</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="container">
+        <div class="image-section">
+            <h2>Original Image</h2>
+            <div class="image-container" id="originalContainer">
+                <canvas id="originalCanvas"></canvas>
+            </div>
+        </div>
+
+        <div class="image-section">
+            <h2>Result</h2>
+            <div class="image-container" id="resultContainer">
+                <canvas id="resultCanvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="8.js"></script>
+</body>
+</html>
